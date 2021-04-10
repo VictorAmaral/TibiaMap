@@ -5282,10 +5282,12 @@
                 enableUserInput: !1,
                 labelFormatterLat: function(e) {
                     var i = Math.floor(Math.abs(256 * e));
+                    var i = Math.round(i/14,76954921803128)
                     return "<b>Y</b>: " + i + " <b>Z</b>: " + t.floor
                 },
                 labelFormatterLng: function(t) {
                     var e = Math.floor(Math.abs(256 * t));
+                    var e = Math.round(e/17,45563674321503)
                     return "<b>X</b>: " + e
                 }
             }).addTo(_), L.LevelButtons.btns = L.levelButtons({
