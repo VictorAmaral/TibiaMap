@@ -5281,13 +5281,12 @@
                 position: "bottomleft",
                 enableUserInput: !1,
                 labelFormatterLat: function(e) {
-                    var i = Math.floor(Math.abs(256 * e));
-                    var i = i - 29935
+                    //var i = Math.floor(Math.abs(256 * e));
+                    var i = e
                     return "<b>Y</b>: " + i + " <b>Z</b>: " + t.floor
                 },
                 labelFormatterLng: function(t) {
                     var e = Math.floor(Math.abs(256 * t));
-                    var e = e - 31529
                     return "<b>X</b>: " + e
                 }
             }).addTo(_), L.LevelButtons.btns = L.levelButtons({
